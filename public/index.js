@@ -65,227 +65,39 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/*!*************************!*\
+  !*** ./frontend/app.js ***!
+  \*************************/
+/*! exports provided:  */
+/*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_phone_page_phone_page_js__ = __webpack_require__(1);
-
-
-
-
-new __WEBPACK_IMPORTED_MODULE_0__components_phone_page_phone_page_js__["a" /* default */]({
-  el: document.querySelector('[data-component="phone-page"]')
-});
+eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_phone_page_phone_page_js__ = __webpack_require__(/*! ./components/phone-page/phone-page.js */ 1);\n\n\n\n\nnew __WEBPACK_IMPORTED_MODULE_0__components_phone_page_phone_page_js__[\"a\" /* default */]({\n  el: document.querySelector('[data-component=\"phone-page\"]')\n});\n\nconsole.log(\"123\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2Zyb250ZW5kL2FwcC5qcz9mODllIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxuaW1wb3J0IFBob25lUGFnZSBmcm9tICcuL2NvbXBvbmVudHMvcGhvbmUtcGFnZS9waG9uZS1wYWdlLmpzJztcblxubmV3IFBob25lUGFnZSh7XG4gIGVsOiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdbZGF0YS1jb21wb25lbnQ9XCJwaG9uZS1wYWdlXCJdJylcbn0pO1xuXG5jb25zb2xlLmxvZyhcIjEyM1wiKTtcblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL2Zyb250ZW5kL2FwcC5qc1xuLy8gbW9kdWxlIGlkID0gMFxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///0\n");
 
 /***/ }),
 /* 1 */
+/*!******************************************************!*\
+  !*** ./frontend/components/phone-page/phone-page.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__phone_catalogue_phone_catalogue_js__ = __webpack_require__(2);
-
-
-
-
-class PhonePage {
-  constructor(options) {
-    this._el = options.el;
-
-    this._catalogue = new __WEBPACK_IMPORTED_MODULE_0__phone_catalogue_phone_catalogue_js__["a" /* default */]({
-      el: this._el.querySelector('[data-component="phone-catalogue"]'),
-      phones: phonesFromServer
-    });
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = PhonePage;
-
-
-const phonesFromServer = [
-  {
-    "age": 0,
-    "id": "motorola-xoom-with-wi-fi",
-    "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg",
-    "name": "Motorola XOOM\u2122 with Wi-Fi",
-    "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
-  },
-  {
-    "age": 1,
-    "id": "motorola-xoom",
-    "imageUrl": "img/phones/motorola-xoom.0.jpg",
-    "name": "MOTOROLA XOOM\u2122",
-    "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
-  },
-  {
-    "age": 2,
-    "carrier": "AT&T",
-    "id": "motorola-atrix-4g",
-    "imageUrl": "img/phones/motorola-atrix-4g.0.jpg",
-    "name": "MOTOROLA ATRIX\u2122 4G",
-    "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone."
-  },
-  {
-    "age": 3,
-    "id": "dell-streak-7",
-    "imageUrl": "img/phones/dell-streak-7.0.jpg",
-    "name": "Dell Streak 7",
-    "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around."
-  },
-  {
-    "age": 4,
-    "carrier": "Cellular South",
-    "id": "samsung-gem",
-    "imageUrl": "img/phones/samsung-gem.0.jpg",
-    "name": "Samsung Gem\u2122",
-    "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price."
-  },
-  {
-    "age": 5,
-    "carrier": "Dell",
-    "id": "dell-venue",
-    "imageUrl": "img/phones/dell-venue.0.jpg",
-    "name": "Dell Venue",
-    "snippet": "The Dell Venue; Your Personal Express Lane to Everything"
-  },
-  {
-    "age": 6,
-    "carrier": "Best Buy",
-    "id": "nexus-s",
-    "imageUrl": "img/phones/nexus-s.0.jpg",
-    "name": "Nexus S",
-    "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet."
-  },
-  {
-    "age": 7,
-    "carrier": "Cellular South",
-    "id": "lg-axis",
-    "imageUrl": "img/phones/lg-axis.0.jpg",
-    "name": "LG Axis",
-    "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens"
-  },
-  {
-    "age": 8,
-    "id": "samsung-galaxy-tab",
-    "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg",
-    "name": "Samsung Galaxy Tab\u2122",
-    "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility."
-  },
-  {
-    "age": 9,
-    "carrier": "Cellular South",
-    "id": "samsung-showcase-a-galaxy-s-phone",
-    "imageUrl": "img/phones/samsung-showcase-a-galaxy-s-phone.0.jpg",
-    "name": "Samsung Showcase\u2122 a Galaxy S\u2122 phone",
-    "snippet": "The Samsung Showcase\u2122 delivers a cinema quality experience like you\u2019ve never seen before. Its innovative 4\u201d touch display technology provides rich picture brilliance, even outdoors"
-  },
-  {
-    "age": 10,
-    "carrier": "Verizon",
-    "id": "droid-2-global-by-motorola",
-    "imageUrl": "img/phones/droid-2-global-by-motorola.0.jpg",
-    "name": "DROID\u2122 2 Global by Motorola",
-    "snippet": "The first smartphone with a 1.2 GHz processor and global capabilities."
-  },
-  {
-    "age": 11,
-    "carrier": "Verizon",
-    "id": "droid-pro-by-motorola",
-    "imageUrl": "img/phones/droid-pro-by-motorola.0.jpg",
-    "name": "DROID\u2122 Pro by Motorola",
-    "snippet": "The next generation of DOES."
-  },
-  {
-    "age": 12,
-    "carrier": "AT&T",
-    "id": "motorola-bravo-with-motoblur",
-    "imageUrl": "img/phones/motorola-bravo-with-motoblur.0.jpg",
-    "name": "MOTOROLA BRAVO\u2122 with MOTOBLUR\u2122",
-    "snippet": "An experience to cheer about."
-  },
-  {
-    "age": 13,
-    "carrier": "T-Mobile",
-    "id": "motorola-defy-with-motoblur",
-    "imageUrl": "img/phones/motorola-defy-with-motoblur.0.jpg",
-    "name": "Motorola DEFY\u2122 with MOTOBLUR\u2122",
-    "snippet": "Are you ready for everything life throws your way?"
-  },
-  {
-    "age": 14,
-    "carrier": "T-Mobile",
-    "id": "t-mobile-mytouch-4g",
-    "imageUrl": "img/phones/t-mobile-mytouch-4g.0.jpg",
-    "name": "T-Mobile myTouch 4G",
-    "snippet": "The T-Mobile myTouch 4G is a premium smartphone designed to deliver blazing fast 4G speeds so that you can video chat from practically anywhere, with or without Wi-Fi."
-  },
-  {
-    "age": 15,
-    "carrier": "US Cellular",
-    "id": "samsung-mesmerize-a-galaxy-s-phone",
-    "imageUrl": "img/phones/samsung-mesmerize-a-galaxy-s-phone.0.jpg",
-    "name": "Samsung Mesmerize\u2122 a Galaxy S\u2122 phone",
-    "snippet": "The Samsung Mesmerize\u2122 delivers a cinema quality experience like you\u2019ve never seen before. Its innovative 4\u201d touch display technology provides rich picture brilliance,even outdoors"
-  },
-  {
-    "age": 16,
-    "carrier": "Sprint",
-    "id": "sanyo-zio",
-    "imageUrl": "img/phones/sanyo-zio.0.jpg",
-    "name": "SANYO ZIO",
-    "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value."
-  },
-  {
-    "age": 17,
-    "id": "samsung-transform",
-    "imageUrl": "img/phones/samsung-transform.0.jpg",
-    "name": "Samsung Transform\u2122",
-    "snippet": "The Samsung Transform\u2122 brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed \u201cSprint ID Service Pack\u201d."
-  },
-  {
-    "age": 18,
-    "id": "t-mobile-g2",
-    "imageUrl": "img/phones/t-mobile-g2.0.jpg",
-    "name": "T-Mobile G2",
-    "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible."
-  },
-  {
-    "age": 19,
-    "id": "motorola-charm-with-motoblur",
-    "imageUrl": "img/phones/motorola-charm-with-motoblur.0.jpg",
-    "name": "Motorola CHARM\u2122 with MOTOBLUR\u2122",
-    "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service."
-  }
-];
-
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__phone_catalogue_phone_catalogue_js__ = __webpack_require__(/*! ../phone-catalogue/phone-catalogue.js */ 2);\n\n\n\n\nclass PhonePage {\n  constructor(options) {\n    this._el = options.el;\n\n    this._catalogue = new __WEBPACK_IMPORTED_MODULE_0__phone_catalogue_phone_catalogue_js__[\"a\" /* default */]({\n      el: this._el.querySelector('[data-component=\"phone-catalogue\"]'),\n      phones: phonesFromServer\n    });\n  }\n}\n/* harmony export (immutable) */ __webpack_exports__[\"a\"] = PhonePage;\n\n\nconst phonesFromServer = [\n  {\n    \"age\": 0,\n    \"id\": \"motorola-xoom-with-wi-fi\",\n    \"imageUrl\": \"img/phones/motorola-xoom-with-wi-fi.0.jpg\",\n    \"name\": \"Motorola XOOM\\u2122 with Wi-Fi\",\n    \"snippet\": \"The Next, Next Generation\\r\\n\\r\\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).\"\n  },\n  {\n    \"age\": 1,\n    \"id\": \"motorola-xoom\",\n    \"imageUrl\": \"img/phones/motorola-xoom.0.jpg\",\n    \"name\": \"MOTOROLA XOOM\\u2122\",\n    \"snippet\": \"The Next, Next Generation\\n\\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb).\"\n  },\n  {\n    \"age\": 2,\n    \"carrier\": \"AT&T\",\n    \"id\": \"motorola-atrix-4g\",\n    \"imageUrl\": \"img/phones/motorola-atrix-4g.0.jpg\",\n    \"name\": \"MOTOROLA ATRIX\\u2122 4G\",\n    \"snippet\": \"MOTOROLA ATRIX 4G the world's most powerful smartphone.\"\n  },\n  {\n    \"age\": 3,\n    \"id\": \"dell-streak-7\",\n    \"imageUrl\": \"img/phones/dell-streak-7.0.jpg\",\n    \"name\": \"Dell Streak 7\",\n    \"snippet\": \"Introducing Dell\\u2122 Streak 7. Share photos, videos and movies together. It\\u2019s small enough to carry around, big enough to gather around.\"\n  },\n  {\n    \"age\": 4,\n    \"carrier\": \"Cellular South\",\n    \"id\": \"samsung-gem\",\n    \"imageUrl\": \"img/phones/samsung-gem.0.jpg\",\n    \"name\": \"Samsung Gem\\u2122\",\n    \"snippet\": \"The Samsung Gem\\u2122 brings you everything that you would expect and more from a touch display smart phone \\u2013 more apps, more features and a more affordable price.\"\n  },\n  {\n    \"age\": 5,\n    \"carrier\": \"Dell\",\n    \"id\": \"dell-venue\",\n    \"imageUrl\": \"img/phones/dell-venue.0.jpg\",\n    \"name\": \"Dell Venue\",\n    \"snippet\": \"The Dell Venue; Your Personal Express Lane to Everything\"\n  },\n  {\n    \"age\": 6,\n    \"carrier\": \"Best Buy\",\n    \"id\": \"nexus-s\",\n    \"imageUrl\": \"img/phones/nexus-s.0.jpg\",\n    \"name\": \"Nexus S\",\n    \"snippet\": \"Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet.\"\n  },\n  {\n    \"age\": 7,\n    \"carrier\": \"Cellular South\",\n    \"id\": \"lg-axis\",\n    \"imageUrl\": \"img/phones/lg-axis.0.jpg\",\n    \"name\": \"LG Axis\",\n    \"snippet\": \"Android Powered, Google Maps Navigation, 5 Customizable Home Screens\"\n  },\n  {\n    \"age\": 8,\n    \"id\": \"samsung-galaxy-tab\",\n    \"imageUrl\": \"img/phones/samsung-galaxy-tab.0.jpg\",\n    \"name\": \"Samsung Galaxy Tab\\u2122\",\n    \"snippet\": \"Feel Free to Tab\\u2122. The Samsung Galaxy Tab\\u2122 brings you an ultra-mobile entertainment experience through its 7\\u201d display, high-power processor and Adobe\\u00ae Flash\\u00ae Player compatibility.\"\n  },\n  {\n    \"age\": 9,\n    \"carrier\": \"Cellular South\",\n    \"id\": \"samsung-showcase-a-galaxy-s-phone\",\n    \"imageUrl\": \"img/phones/samsung-showcase-a-galaxy-s-phone.0.jpg\",\n    \"name\": \"Samsung Showcase\\u2122 a Galaxy S\\u2122 phone\",\n    \"snippet\": \"The Samsung Showcase\\u2122 delivers a cinema quality experience like you\\u2019ve never seen before. Its innovative 4\\u201d touch display technology provides rich picture brilliance, even outdoors\"\n  },\n  {\n    \"age\": 10,\n    \"carrier\": \"Verizon\",\n    \"id\": \"droid-2-global-by-motorola\",\n    \"imageUrl\": \"img/phones/droid-2-global-by-motorola.0.jpg\",\n    \"name\": \"DROID\\u2122 2 Global by Motorola\",\n    \"snippet\": \"The first smartphone with a 1.2 GHz processor and global capabilities.\"\n  },\n  {\n    \"age\": 11,\n    \"carrier\": \"Verizon\",\n    \"id\": \"droid-pro-by-motorola\",\n    \"imageUrl\": \"img/phones/droid-pro-by-motorola.0.jpg\",\n    \"name\": \"DROID\\u2122 Pro by Motorola\",\n    \"snippet\": \"The next generation of DOES.\"\n  },\n  {\n    \"age\": 12,\n    \"carrier\": \"AT&T\",\n    \"id\": \"motorola-bravo-with-motoblur\",\n    \"imageUrl\": \"img/phones/motorola-bravo-with-motoblur.0.jpg\",\n    \"name\": \"MOTOROLA BRAVO\\u2122 with MOTOBLUR\\u2122\",\n    \"snippet\": \"An experience to cheer about.\"\n  },\n  {\n    \"age\": 13,\n    \"carrier\": \"T-Mobile\",\n    \"id\": \"motorola-defy-with-motoblur\",\n    \"imageUrl\": \"img/phones/motorola-defy-with-motoblur.0.jpg\",\n    \"name\": \"Motorola DEFY\\u2122 with MOTOBLUR\\u2122\",\n    \"snippet\": \"Are you ready for everything life throws your way?\"\n  },\n  {\n    \"age\": 14,\n    \"carrier\": \"T-Mobile\",\n    \"id\": \"t-mobile-mytouch-4g\",\n    \"imageUrl\": \"img/phones/t-mobile-mytouch-4g.0.jpg\",\n    \"name\": \"T-Mobile myTouch 4G\",\n    \"snippet\": \"The T-Mobile myTouch 4G is a premium smartphone designed to deliver blazing fast 4G speeds so that you can video chat from practically anywhere, with or without Wi-Fi.\"\n  },\n  {\n    \"age\": 15,\n    \"carrier\": \"US Cellular\",\n    \"id\": \"samsung-mesmerize-a-galaxy-s-phone\",\n    \"imageUrl\": \"img/phones/samsung-mesmerize-a-galaxy-s-phone.0.jpg\",\n    \"name\": \"Samsung Mesmerize\\u2122 a Galaxy S\\u2122 phone\",\n    \"snippet\": \"The Samsung Mesmerize\\u2122 delivers a cinema quality experience like you\\u2019ve never seen before. Its innovative 4\\u201d touch display technology provides rich picture brilliance,even outdoors\"\n  },\n  {\n    \"age\": 16,\n    \"carrier\": \"Sprint\",\n    \"id\": \"sanyo-zio\",\n    \"imageUrl\": \"img/phones/sanyo-zio.0.jpg\",\n    \"name\": \"SANYO ZIO\",\n    \"snippet\": \"The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value.\"\n  },\n  {\n    \"age\": 17,\n    \"id\": \"samsung-transform\",\n    \"imageUrl\": \"img/phones/samsung-transform.0.jpg\",\n    \"name\": \"Samsung Transform\\u2122\",\n    \"snippet\": \"The Samsung Transform\\u2122 brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed \\u201cSprint ID Service Pack\\u201d.\"\n  },\n  {\n    \"age\": 18,\n    \"id\": \"t-mobile-g2\",\n    \"imageUrl\": \"img/phones/t-mobile-g2.0.jpg\",\n    \"name\": \"T-Mobile G2\",\n    \"snippet\": \"The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible.\"\n  },\n  {\n    \"age\": 19,\n    \"id\": \"motorola-charm-with-motoblur\",\n    \"imageUrl\": \"img/phones/motorola-charm-with-motoblur.0.jpg\",\n    \"name\": \"Motorola CHARM\\u2122 with MOTOBLUR\\u2122\",\n    \"snippet\": \"Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service.\"\n  }\n];\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2Zyb250ZW5kL2NvbXBvbmVudHMvcGhvbmUtcGFnZS9waG9uZS1wYWdlLmpzP2E3YWEiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuXG5pbXBvcnQgUGhvbmVDYXRhbG9ndWUgZnJvbSAnLi4vcGhvbmUtY2F0YWxvZ3VlL3Bob25lLWNhdGFsb2d1ZS5qcyc7XG5cbmV4cG9ydCBkZWZhdWx0IGNsYXNzIFBob25lUGFnZSB7XG4gIGNvbnN0cnVjdG9yKG9wdGlvbnMpIHtcbiAgICB0aGlzLl9lbCA9IG9wdGlvbnMuZWw7XG5cbiAgICB0aGlzLl9jYXRhbG9ndWUgPSBuZXcgUGhvbmVDYXRhbG9ndWUoe1xuICAgICAgZWw6IHRoaXMuX2VsLnF1ZXJ5U2VsZWN0b3IoJ1tkYXRhLWNvbXBvbmVudD1cInBob25lLWNhdGFsb2d1ZVwiXScpLFxuICAgICAgcGhvbmVzOiBwaG9uZXNGcm9tU2VydmVyXG4gICAgfSk7XG4gIH1cbn1cblxuY29uc3QgcGhvbmVzRnJvbVNlcnZlciA9IFtcbiAge1xuICAgIFwiYWdlXCI6IDAsXG4gICAgXCJpZFwiOiBcIm1vdG9yb2xhLXhvb20td2l0aC13aS1maVwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL21vdG9yb2xhLXhvb20td2l0aC13aS1maS4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIk1vdG9yb2xhIFhPT01cXHUyMTIyIHdpdGggV2ktRmlcIixcbiAgICBcInNuaXBwZXRcIjogXCJUaGUgTmV4dCwgTmV4dCBHZW5lcmF0aW9uXFxyXFxuXFxyXFxuRXhwZXJpZW5jZSB0aGUgZnV0dXJlIHdpdGggTW90b3JvbGEgWE9PTSB3aXRoIFdpLUZpLCB0aGUgd29ybGQncyBmaXJzdCB0YWJsZXQgcG93ZXJlZCBieSBBbmRyb2lkIDMuMCAoSG9uZXljb21iKS5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogMSxcbiAgICBcImlkXCI6IFwibW90b3JvbGEteG9vbVwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL21vdG9yb2xhLXhvb20uMC5qcGdcIixcbiAgICBcIm5hbWVcIjogXCJNT1RPUk9MQSBYT09NXFx1MjEyMlwiLFxuICAgIFwic25pcHBldFwiOiBcIlRoZSBOZXh0LCBOZXh0IEdlbmVyYXRpb25cXG5cXG5FeHBlcmllbmNlIHRoZSBmdXR1cmUgd2l0aCBNT1RPUk9MQSBYT09NLCB0aGUgd29ybGQncyBmaXJzdCB0YWJsZXQgcG93ZXJlZCBieSBBbmRyb2lkIDMuMCAoSG9uZXljb21iKS5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogMixcbiAgICBcImNhcnJpZXJcIjogXCJBVCZUXCIsXG4gICAgXCJpZFwiOiBcIm1vdG9yb2xhLWF0cml4LTRnXCIsXG4gICAgXCJpbWFnZVVybFwiOiBcImltZy9waG9uZXMvbW90b3JvbGEtYXRyaXgtNGcuMC5qcGdcIixcbiAgICBcIm5hbWVcIjogXCJNT1RPUk9MQSBBVFJJWFxcdTIxMjIgNEdcIixcbiAgICBcInNuaXBwZXRcIjogXCJNT1RPUk9MQSBBVFJJWCA0RyB0aGUgd29ybGQncyBtb3N0IHBvd2VyZnVsIHNtYXJ0cGhvbmUuXCJcbiAgfSxcbiAge1xuICAgIFwiYWdlXCI6IDMsXG4gICAgXCJpZFwiOiBcImRlbGwtc3RyZWFrLTdcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9kZWxsLXN0cmVhay03LjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiRGVsbCBTdHJlYWsgN1wiLFxuICAgIFwic25pcHBldFwiOiBcIkludHJvZHVjaW5nIERlbGxcXHUyMTIyIFN0cmVhayA3LiBTaGFyZSBwaG90b3MsIHZpZGVvcyBhbmQgbW92aWVzIHRvZ2V0aGVyLiBJdFxcdTIwMTlzIHNtYWxsIGVub3VnaCB0byBjYXJyeSBhcm91bmQsIGJpZyBlbm91Z2ggdG8gZ2F0aGVyIGFyb3VuZC5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogNCxcbiAgICBcImNhcnJpZXJcIjogXCJDZWxsdWxhciBTb3V0aFwiLFxuICAgIFwiaWRcIjogXCJzYW1zdW5nLWdlbVwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL3NhbXN1bmctZ2VtLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiU2Ftc3VuZyBHZW1cXHUyMTIyXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiVGhlIFNhbXN1bmcgR2VtXFx1MjEyMiBicmluZ3MgeW91IGV2ZXJ5dGhpbmcgdGhhdCB5b3Ugd291bGQgZXhwZWN0IGFuZCBtb3JlIGZyb20gYSB0b3VjaCBkaXNwbGF5IHNtYXJ0IHBob25lIFxcdTIwMTMgbW9yZSBhcHBzLCBtb3JlIGZlYXR1cmVzIGFuZCBhIG1vcmUgYWZmb3JkYWJsZSBwcmljZS5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogNSxcbiAgICBcImNhcnJpZXJcIjogXCJEZWxsXCIsXG4gICAgXCJpZFwiOiBcImRlbGwtdmVudWVcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9kZWxsLXZlbnVlLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiRGVsbCBWZW51ZVwiLFxuICAgIFwic25pcHBldFwiOiBcIlRoZSBEZWxsIFZlbnVlOyBZb3VyIFBlcnNvbmFsIEV4cHJlc3MgTGFuZSB0byBFdmVyeXRoaW5nXCJcbiAgfSxcbiAge1xuICAgIFwiYWdlXCI6IDYsXG4gICAgXCJjYXJyaWVyXCI6IFwiQmVzdCBCdXlcIixcbiAgICBcImlkXCI6IFwibmV4dXMtc1wiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL25leHVzLXMuMC5qcGdcIixcbiAgICBcIm5hbWVcIjogXCJOZXh1cyBTXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiRmFzdCBqdXN0IGdvdCBmYXN0ZXIgd2l0aCBOZXh1cyBTLiBBIHB1cmUgR29vZ2xlIGV4cGVyaWVuY2UsIE5leHVzIFMgaXMgdGhlIGZpcnN0IHBob25lIHRvIHJ1biBHaW5nZXJicmVhZCAoQW5kcm9pZCAyLjMpLCB0aGUgZmFzdGVzdCB2ZXJzaW9uIG9mIEFuZHJvaWQgeWV0LlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiA3LFxuICAgIFwiY2FycmllclwiOiBcIkNlbGx1bGFyIFNvdXRoXCIsXG4gICAgXCJpZFwiOiBcImxnLWF4aXNcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9sZy1heGlzLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiTEcgQXhpc1wiLFxuICAgIFwic25pcHBldFwiOiBcIkFuZHJvaWQgUG93ZXJlZCwgR29vZ2xlIE1hcHMgTmF2aWdhdGlvbiwgNSBDdXN0b21pemFibGUgSG9tZSBTY3JlZW5zXCJcbiAgfSxcbiAge1xuICAgIFwiYWdlXCI6IDgsXG4gICAgXCJpZFwiOiBcInNhbXN1bmctZ2FsYXh5LXRhYlwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL3NhbXN1bmctZ2FsYXh5LXRhYi4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIlNhbXN1bmcgR2FsYXh5IFRhYlxcdTIxMjJcIixcbiAgICBcInNuaXBwZXRcIjogXCJGZWVsIEZyZWUgdG8gVGFiXFx1MjEyMi4gVGhlIFNhbXN1bmcgR2FsYXh5IFRhYlxcdTIxMjIgYnJpbmdzIHlvdSBhbiB1bHRyYS1tb2JpbGUgZW50ZXJ0YWlubWVudCBleHBlcmllbmNlIHRocm91Z2ggaXRzIDdcXHUyMDFkIGRpc3BsYXksIGhpZ2gtcG93ZXIgcHJvY2Vzc29yIGFuZCBBZG9iZVxcdTAwYWUgRmxhc2hcXHUwMGFlIFBsYXllciBjb21wYXRpYmlsaXR5LlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiA5LFxuICAgIFwiY2FycmllclwiOiBcIkNlbGx1bGFyIFNvdXRoXCIsXG4gICAgXCJpZFwiOiBcInNhbXN1bmctc2hvd2Nhc2UtYS1nYWxheHktcy1waG9uZVwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL3NhbXN1bmctc2hvd2Nhc2UtYS1nYWxheHktcy1waG9uZS4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIlNhbXN1bmcgU2hvd2Nhc2VcXHUyMTIyIGEgR2FsYXh5IFNcXHUyMTIyIHBob25lXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiVGhlIFNhbXN1bmcgU2hvd2Nhc2VcXHUyMTIyIGRlbGl2ZXJzIGEgY2luZW1hIHF1YWxpdHkgZXhwZXJpZW5jZSBsaWtlIHlvdVxcdTIwMTl2ZSBuZXZlciBzZWVuIGJlZm9yZS4gSXRzIGlubm92YXRpdmUgNFxcdTIwMWQgdG91Y2ggZGlzcGxheSB0ZWNobm9sb2d5IHByb3ZpZGVzIHJpY2ggcGljdHVyZSBicmlsbGlhbmNlLCBldmVuIG91dGRvb3JzXCJcbiAgfSxcbiAge1xuICAgIFwiYWdlXCI6IDEwLFxuICAgIFwiY2FycmllclwiOiBcIlZlcml6b25cIixcbiAgICBcImlkXCI6IFwiZHJvaWQtMi1nbG9iYWwtYnktbW90b3JvbGFcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9kcm9pZC0yLWdsb2JhbC1ieS1tb3Rvcm9sYS4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIkRST0lEXFx1MjEyMiAyIEdsb2JhbCBieSBNb3Rvcm9sYVwiLFxuICAgIFwic25pcHBldFwiOiBcIlRoZSBmaXJzdCBzbWFydHBob25lIHdpdGggYSAxLjIgR0h6IHByb2Nlc3NvciBhbmQgZ2xvYmFsIGNhcGFiaWxpdGllcy5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogMTEsXG4gICAgXCJjYXJyaWVyXCI6IFwiVmVyaXpvblwiLFxuICAgIFwiaWRcIjogXCJkcm9pZC1wcm8tYnktbW90b3JvbGFcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9kcm9pZC1wcm8tYnktbW90b3JvbGEuMC5qcGdcIixcbiAgICBcIm5hbWVcIjogXCJEUk9JRFxcdTIxMjIgUHJvIGJ5IE1vdG9yb2xhXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiVGhlIG5leHQgZ2VuZXJhdGlvbiBvZiBET0VTLlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxMixcbiAgICBcImNhcnJpZXJcIjogXCJBVCZUXCIsXG4gICAgXCJpZFwiOiBcIm1vdG9yb2xhLWJyYXZvLXdpdGgtbW90b2JsdXJcIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9tb3Rvcm9sYS1icmF2by13aXRoLW1vdG9ibHVyLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiTU9UT1JPTEEgQlJBVk9cXHUyMTIyIHdpdGggTU9UT0JMVVJcXHUyMTIyXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiQW4gZXhwZXJpZW5jZSB0byBjaGVlciBhYm91dC5cIlxuICB9LFxuICB7XG4gICAgXCJhZ2VcIjogMTMsXG4gICAgXCJjYXJyaWVyXCI6IFwiVC1Nb2JpbGVcIixcbiAgICBcImlkXCI6IFwibW90b3JvbGEtZGVmeS13aXRoLW1vdG9ibHVyXCIsXG4gICAgXCJpbWFnZVVybFwiOiBcImltZy9waG9uZXMvbW90b3JvbGEtZGVmeS13aXRoLW1vdG9ibHVyLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiTW90b3JvbGEgREVGWVxcdTIxMjIgd2l0aCBNT1RPQkxVUlxcdTIxMjJcIixcbiAgICBcInNuaXBwZXRcIjogXCJBcmUgeW91IHJlYWR5IGZvciBldmVyeXRoaW5nIGxpZmUgdGhyb3dzIHlvdXIgd2F5P1wiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxNCxcbiAgICBcImNhcnJpZXJcIjogXCJULU1vYmlsZVwiLFxuICAgIFwiaWRcIjogXCJ0LW1vYmlsZS1teXRvdWNoLTRnXCIsXG4gICAgXCJpbWFnZVVybFwiOiBcImltZy9waG9uZXMvdC1tb2JpbGUtbXl0b3VjaC00Zy4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIlQtTW9iaWxlIG15VG91Y2ggNEdcIixcbiAgICBcInNuaXBwZXRcIjogXCJUaGUgVC1Nb2JpbGUgbXlUb3VjaCA0RyBpcyBhIHByZW1pdW0gc21hcnRwaG9uZSBkZXNpZ25lZCB0byBkZWxpdmVyIGJsYXppbmcgZmFzdCA0RyBzcGVlZHMgc28gdGhhdCB5b3UgY2FuIHZpZGVvIGNoYXQgZnJvbSBwcmFjdGljYWxseSBhbnl3aGVyZSwgd2l0aCBvciB3aXRob3V0IFdpLUZpLlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxNSxcbiAgICBcImNhcnJpZXJcIjogXCJVUyBDZWxsdWxhclwiLFxuICAgIFwiaWRcIjogXCJzYW1zdW5nLW1lc21lcml6ZS1hLWdhbGF4eS1zLXBob25lXCIsXG4gICAgXCJpbWFnZVVybFwiOiBcImltZy9waG9uZXMvc2Ftc3VuZy1tZXNtZXJpemUtYS1nYWxheHktcy1waG9uZS4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIlNhbXN1bmcgTWVzbWVyaXplXFx1MjEyMiBhIEdhbGF4eSBTXFx1MjEyMiBwaG9uZVwiLFxuICAgIFwic25pcHBldFwiOiBcIlRoZSBTYW1zdW5nIE1lc21lcml6ZVxcdTIxMjIgZGVsaXZlcnMgYSBjaW5lbWEgcXVhbGl0eSBleHBlcmllbmNlIGxpa2UgeW91XFx1MjAxOXZlIG5ldmVyIHNlZW4gYmVmb3JlLiBJdHMgaW5ub3ZhdGl2ZSA0XFx1MjAxZCB0b3VjaCBkaXNwbGF5IHRlY2hub2xvZ3kgcHJvdmlkZXMgcmljaCBwaWN0dXJlIGJyaWxsaWFuY2UsZXZlbiBvdXRkb29yc1wiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxNixcbiAgICBcImNhcnJpZXJcIjogXCJTcHJpbnRcIixcbiAgICBcImlkXCI6IFwic2FueW8temlvXCIsXG4gICAgXCJpbWFnZVVybFwiOiBcImltZy9waG9uZXMvc2FueW8temlvLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiU0FOWU8gWklPXCIsXG4gICAgXCJzbmlwcGV0XCI6IFwiVGhlIFNhbnlvIFppbyBieSBLeW9jZXJhIGlzIGFuIEFuZHJvaWQgc21hcnRwaG9uZSB3aXRoIGEgY29tYmluYXRpb24gb2YgdWx0cmEtc2xlZWsgc3R5bGluZywgc3Ryb25nIHBlcmZvcm1hbmNlIGFuZCB1bnByZWNlZGVudGVkIHZhbHVlLlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxNyxcbiAgICBcImlkXCI6IFwic2Ftc3VuZy10cmFuc2Zvcm1cIixcbiAgICBcImltYWdlVXJsXCI6IFwiaW1nL3Bob25lcy9zYW1zdW5nLXRyYW5zZm9ybS4wLmpwZ1wiLFxuICAgIFwibmFtZVwiOiBcIlNhbXN1bmcgVHJhbnNmb3JtXFx1MjEyMlwiLFxuICAgIFwic25pcHBldFwiOiBcIlRoZSBTYW1zdW5nIFRyYW5zZm9ybVxcdTIxMjIgYnJpbmdzIHlvdSBhIGZ1biB3YXkgdG8gY3VzdG9taXplIHlvdXIgQW5kcm9pZCBwb3dlcmVkIHRvdWNoIHNjcmVlbiBwaG9uZSB0byBqdXN0IHRoZSB3YXkgeW91IGxpa2UgaXQgdGhyb3VnaCB5b3VyIGZhdm9yaXRlIHRoZW1lZCBcXHUyMDFjU3ByaW50IElEIFNlcnZpY2UgUGFja1xcdTIwMWQuXCJcbiAgfSxcbiAge1xuICAgIFwiYWdlXCI6IDE4LFxuICAgIFwiaWRcIjogXCJ0LW1vYmlsZS1nMlwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL3QtbW9iaWxlLWcyLjAuanBnXCIsXG4gICAgXCJuYW1lXCI6IFwiVC1Nb2JpbGUgRzJcIixcbiAgICBcInNuaXBwZXRcIjogXCJUaGUgVC1Nb2JpbGUgRzIgd2l0aCBHb29nbGUgaXMgdGhlIGZpcnN0IHNtYXJ0cGhvbmUgYnVpbHQgZm9yIDRHIHNwZWVkcyBvbiBULU1vYmlsZSdzIG5ldyBuZXR3b3JrLiBHZXQgdGhlIGluZm9ybWF0aW9uIHlvdSBuZWVkLCBmYXN0ZXIgdGhhbiB5b3UgZXZlciB0aG91Z2h0IHBvc3NpYmxlLlwiXG4gIH0sXG4gIHtcbiAgICBcImFnZVwiOiAxOSxcbiAgICBcImlkXCI6IFwibW90b3JvbGEtY2hhcm0td2l0aC1tb3RvYmx1clwiLFxuICAgIFwiaW1hZ2VVcmxcIjogXCJpbWcvcGhvbmVzL21vdG9yb2xhLWNoYXJtLXdpdGgtbW90b2JsdXIuMC5qcGdcIixcbiAgICBcIm5hbWVcIjogXCJNb3Rvcm9sYSBDSEFSTVxcdTIxMjIgd2l0aCBNT1RPQkxVUlxcdTIxMjJcIixcbiAgICBcInNuaXBwZXRcIjogXCJNb3Rvcm9sYSBDSEFSTSBmaXRzIGVhc2lseSBpbiB5b3VyIHBvY2tldCBvciBwYWxtLiAgSW5jbHVkZXMgTU9UT0JMVVIgc2VydmljZS5cIlxuICB9XG5dO1xuXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9mcm9udGVuZC9jb21wb25lbnRzL3Bob25lLXBhZ2UvcGhvbmUtcGFnZS5qc1xuLy8gbW9kdWxlIGlkID0gMVxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
 
 /***/ }),
 /* 2 */
+/*!****************************************************************!*\
+  !*** ./frontend/components/phone-catalogue/phone-catalogue.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-class PhoneCatalogue {
-  constructor(options) {
-    this._el = options.el;
-    this._phones = options.phones;
-
-    const template = document.getElementById('phone-catalogue-template').innerHTML;
-
-    this._compiledTemplate = _.template(template);
-
-    this._render();
-  }
-
-  _render() {
-    this._el.innerHTML = this._compiledTemplate({
-      phones: this._phones
-    });
-  }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = PhoneCatalogue;
-
-
+eval("\n\nclass PhoneCatalogue {\n  constructor(options) {\n    this._el = options.el;\n    this._phones = options.phones;\n\n    const template = document.getElementById('phone-catalogue-template').innerHTML;\n\n    this._compiledTemplate = _.template(template);\n\n    this._render();\n  }\n\n  _render() {\n    this._el.innerHTML = this._compiledTemplate({\n      phones: this._phones\n    });\n  }\n}\n/* harmony export (immutable) */ __webpack_exports__[\"a\"] = PhoneCatalogue;\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2Zyb250ZW5kL2NvbXBvbmVudHMvcGhvbmUtY2F0YWxvZ3VlL3Bob25lLWNhdGFsb2d1ZS5qcz82OWU0Il0sInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgUGhvbmVDYXRhbG9ndWUge1xuICBjb25zdHJ1Y3RvcihvcHRpb25zKSB7XG4gICAgdGhpcy5fZWwgPSBvcHRpb25zLmVsO1xuICAgIHRoaXMuX3Bob25lcyA9IG9wdGlvbnMucGhvbmVzO1xuXG4gICAgY29uc3QgdGVtcGxhdGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncGhvbmUtY2F0YWxvZ3VlLXRlbXBsYXRlJykuaW5uZXJIVE1MO1xuXG4gICAgdGhpcy5fY29tcGlsZWRUZW1wbGF0ZSA9IF8udGVtcGxhdGUodGVtcGxhdGUpO1xuXG4gICAgdGhpcy5fcmVuZGVyKCk7XG4gIH1cblxuICBfcmVuZGVyKCkge1xuICAgIHRoaXMuX2VsLmlubmVySFRNTCA9IHRoaXMuX2NvbXBpbGVkVGVtcGxhdGUoe1xuICAgICAgcGhvbmVzOiB0aGlzLl9waG9uZXNcbiAgICB9KTtcbiAgfVxufVxuXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9mcm9udGVuZC9jb21wb25lbnRzL3Bob25lLWNhdGFsb2d1ZS9waG9uZS1jYXRhbG9ndWUuanNcbi8vIG1vZHVsZSBpZCA9IDJcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///2\n");
 
 /***/ })
 /******/ ]);
