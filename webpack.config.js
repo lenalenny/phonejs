@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './frontend/app.js',
@@ -27,7 +28,28 @@ module.exports = {
           plugins: ['transform-runtime'],
         }
       }
-    }
-    ]
-  }
+    },
+
+    {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+     }
+   ]
+ },
+
+     devServer: {
+     	 contentBase: path.resolve(__dirname, 'public'),
+    	 hot: true,
+    	 inline: true,
+    	 publicPath: '/'
+    },
+
+  plugins: [
+    new UglifyJSPlugin({
+    	sourceMap: true
+    })
+  ]
 };
