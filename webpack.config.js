@@ -1,5 +1,6 @@
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './frontend/app.js',
@@ -50,6 +51,11 @@ module.exports = {
   plugins: [
     new UglifyJSPlugin({
     	sourceMap: true
+    }),
+    new HtmlWebpackPlugin({
+    	title: 'My App',
+    	filename: 'index.html',
+    	template: 'frontend/index.html'
     })
   ]
 };
