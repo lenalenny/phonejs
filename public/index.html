@@ -17,13 +17,14 @@
     <div class="row">
       <div class="col-md-2">
         <!--Sidebar content-->
+        
 
-        <p>
+        <p data-component="filter">
           Search:
           <input>
         </p>
 
-        <p>
+        <p data-component="sorter">
           Sort by:
           <select>
             <option value="name">Alphabetical</option>
@@ -31,13 +32,8 @@
           </select>
         </p>
 
-        <div>
-          <h4>Shopping cart</h4>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
+        <div data-component="shopping-cart">
+     
         </div>
 
       </div>
@@ -45,7 +41,7 @@
         <!--Body content-->
         <div data-component="phone-catalogue"></div>
 
-        <div data-component="phone-details"></div>
+        <div data-component="phone-viewer" class="js-hidden"></div>
 
       </div>
     </div>

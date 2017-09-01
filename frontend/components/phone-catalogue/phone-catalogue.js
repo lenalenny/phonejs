@@ -2,13 +2,17 @@
 
 import compiledTemplate from './template.hbs';
 import './style.css';
+import Component from '../component.js';
 
-export default class PhoneCatalogue {
+export default class PhoneCatalogue extends Component {
   constructor(options) {
-    this._el = options.el;
+    super(options.el);
+
     this._phones = options.phones;
 
     this._render();
+
+    this.on('click', this._onPhoneClick.bind(this));
   }
 
   _render() {
@@ -16,4 +20,22 @@ export default class PhoneCatalogue {
       phones: this._phones
     });
   }
+
+
+
+  _onPhoneClick(event) {
+    let phoneElement = event.target.closest('[data-element="phone"]'); //клик внутри нужного элемента
+
+    if (!phoneElement) {
+      return;
+    }
+
+    console.log(phoneElement.dataset.phoneId);
+
+    //при клике генерируется наше событие phoneSelected
+
+    this.trigger('phoneSelected', phoneElement.dataset.phoneId);
+  }
+
+
 }

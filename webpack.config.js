@@ -51,11 +51,6 @@ module.exports = {
   plugins: [
     new UglifyJSPlugin({
     	sourceMap: true
-    }),
-    new HtmlWebpackPlugin({
-    	title: 'My App',
-    	filename: 'index.html',
-    	template: 'frontend/index.html'
     })
   ]
 };
