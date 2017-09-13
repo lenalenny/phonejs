@@ -7,18 +7,30 @@ export default class PhoneViewer extends Component {
   constructor(options) {
     super(options.el);
 
-    this.render();
+    this._render();
 
     this._el.addEventListener('click', this._onBackButtonClick.bind(this));
     this._el.addEventListener('click', this._onAddButtonClick.bind(this));
   }
 
-  render(phoneDetails) {
-    this._phone = phoneDetails;
+  // render(phoneDetails) {
+  //   this._phone = phoneDetails;
+  //   this._el.innerHTML = compiledTemplate({
+  //     phone: phoneDetails
+  //   });
+  // }
+
+    setPhone(phone) {
+    this._phone = phone;
+    this._render();
+  }
+
+  _render() {
     this._el.innerHTML = compiledTemplate({
-      phone: phoneDetails
+      phone: this._phone
     });
   }
+
 
 
 

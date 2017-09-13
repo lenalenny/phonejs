@@ -8,7 +8,7 @@ export default class PhoneCatalogue extends Component {
   constructor(options) {
     super(options.el);
 
-    this._phones = options.phones;
+    this._phones = [];
 
     this._render();
 
@@ -19,6 +19,11 @@ export default class PhoneCatalogue extends Component {
     this._el.innerHTML = compiledTemplate({
       phones: this._phones
     });
+  }
+
+  setPhones(phones) {
+    this._phones = phones;
+    this._render();
   }
 
 
